@@ -15,52 +15,52 @@
 // console.log("Mes actual:", actualMonth);
 // ejercicio1.month
 // getting real actualMonth
-let actualDate = new Date();
-console.log(actualDate);
-let actualMonth = actualDate.getMonth();
-console.log("Mes actual: ", actualMonth);
-switch (actualMonth) {
-  case 0:
-    console.log("Enero tiene 31 días");
-    break;
-  case 1:
-    console.log("febrero tiene 28 días");
-    break;
-  case 2:
-    console.log("Marzo tiene 31 días");
-    break;
-  case 3:
-    console.log("Abril tiene 30 días");
-    break;
-  case 4:
-    console.log("Mayo tiene 31 días");
-    break;
-  case 5:
-    console.log("Junio tiene 30 días");
-    break;
-  case 6:
-    console.log("Julio tiene 31 días");
-    break;
-  case 7:
-    console.log("Agosto tiene 31 días");
-    break;
-  case 8:
-    console.log("Septiembre tiene 30 días");
-    break;
-  case 9:
-    console.log("Octubre tiene 31 días");
-    break;
-  case 10:
-    console.log("Noviembre tiene 30 días");
-    break;
-  case 11:
-    console.log("Diciembre tiene 31 días");
-    break;
+// let actualDate = new Date();
+// console.log(actualDate);
+// let actualMonth = actualDate.getMonth();
+// console.log("Mes actual: ", actualMonth);
+// switch (actualMonth) {
+//   case 0:
+//     console.log("Enero tiene 31 días");
+//     break;
+//   case 1:
+//     console.log("febrero tiene 28 días");
+//     break;
+//   case 2:
+//     console.log("Marzo tiene 31 días");
+//     break;
+//   case 3:
+//     console.log("Abril tiene 30 días");
+//     break;
+//   case 4:
+//     console.log("Mayo tiene 31 días");
+//     break;
+//   case 5:
+//     console.log("Junio tiene 30 días");
+//     break;
+//   case 6:
+//     console.log("Julio tiene 31 días");
+//     break;
+//   case 7:
+//     console.log("Agosto tiene 31 días");
+//     break;
+//   case 8:
+//     console.log("Septiembre tiene 30 días");
+//     break;
+//   case 9:
+//     console.log("Octubre tiene 31 días");
+//     break;
+//   case 10:
+//     console.log("Noviembre tiene 30 días");
+//     break;
+//   case 11:
+//     console.log("Diciembre tiene 31 días");
+//     break;
 
-  default:
-    console.log("That's not a real month!");
-    break;
-}
+//   default:
+//     console.log("That's not a real month!");
+//     break;
+// }
 // ejercicio 2
 
 // let questionMonth = prompt ("¿Que mes es?");
@@ -126,18 +126,49 @@ switch (actualMonth) {
 
 // EJERCICIO 3
 
-let temperature = prompt("¿What temperature is it?");
-console.log(temperature);
-switch (true) {
-  case temperature < "15":
-    alert("Warm up");
+// let temperature = prompt("¿What temperature is it?");
+// console.log(temperature);
+// switch (true) {
+//   case temperature < "15":
+//     alert("Warm up");
+//     break;
+//   case temperature >= "15" && temperature <= "25":
+//     alert("Enjoy the weather!");
+//     break;
+//   case temperature >= "25":
+//     alert("Cool down");
+//     break;
+//   default:
+//     break;
+// }
+
+// // EJERCICIO 4
+
+// let isGreen = prompt ("what color is the traffic light?");
+// console.log(isGreen);
+// switch (isGreen) {
+//   case "green":
+//     console.log("green", "Cross the road");
+//     break;
+//     default:"error";
+//     break;
+// }
+// console.log("Please await");
+
+// EJERCICIO 5
+
+// const fahrenheit = prompt("Convert to Fahrenheit");
+let celsius =parseFloat(prompt("Concert to fahrenheit"));
+const fahrenheit = (9/5*celsius) + 32;
+console.log(`${celsius} degree celsius is equal to ${fahrenheit} degree fahrenheit.`);
+switch (celsius,fahrenheit){
+  case "Absolute Zero (-274,15) $celsius = $fahrenheit":
     break;
-  case temperature >= "15" && temperature <= "25":
-    alert("Enjoy the weather!");
-    break;
-  case temperature >= "25":
-    alert("Cool down");
-    break;
-  default:
-    break;
+    case "FreezingPoint (0) $celsius = $fahrenheit":
+      break
+      case "Body Temperature (37) $celsius = $fahrenheit":
+        break
+        case "Boiling point(100) $celsius = $fahrenheit":
+        break;
+
 }
