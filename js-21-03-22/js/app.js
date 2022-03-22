@@ -201,8 +201,44 @@
 // }
 
 // EJERCICIO 6
+// let email = "tolkien@lordofrings.com";
+// let password = "aNBR6ZeWPY";
+
+// let userEmail = prompt("Please, enter your email");
+// let userPasword = prompt("Please, enter your password"); 
+// if (email == userEmail && password == userPasword) {
+//   alert ("Welcome Mr. tolkien");
+// } else {
+//   alert("Wrong password or email");
+// }
 
 // EJERCICIO 7 IGUAL QUE EL 5
+
+// let money = 500;
+// let convertTo = "libra";
+// let dollar = 1.1;
+// let yen = 132.87;
+// let libra = 0.83;
+// let franc = 1.03;
+// switch (convertTo) {
+//   case "dollar":
+//     console.log(`The value of ${money} in dollars is: `, money * dollar);
+//   // break;
+//   case "yen":
+//     console.log(`The value of ${money} in yens is: `, money * yen);
+//   // break;
+//   case "libra":
+//     console.log(`The value of ${money} in libras is: `, money * libra);
+//   // break;
+//   case "francs":
+//     console.log(`The value of ${money} in swiss francs is: `, money * franc);
+//   // break;
+//   default:
+//     console.log("You don't have all that money!");
+//     break;
+// }
+
+
 
 // Evaluating calificaations
 // let calification = prompt("Please, enter your calification:");
@@ -410,15 +446,16 @@
 
 // EJERCICIO 10
 
-let max =50;
-let min =1;
-let randomNumber1 = Math.floor (Math.random()*max)+min;
-let randomNumber2 = Math.floor (Math.random()*max)+min;
-if (randomNumber1 > randomNumber2){
-  console.log("Player 1 cins!");
-} else if (randomNumber1 < randomNumber2){
-  console.log("player 2 wins!");
-} else {
-  console.log("Draw");
-}
-console-console.log((randomNumber1));
+// let max =12;
+// let min =1;
+// let randomNumber1 = Math.floor (Math.random()*max)+min;
+// let randomNumber2 = Math.floor (Math.random()*max)+min;
+// if (randomNumber1 > randomNumber2){
+//   console.log("Player 1 cins!");
+// } else if (randomNumber1 < randomNumber2){
+//   console.log("player 2 wins!");
+// } else {
+//   console.log("Draw");
+// }
+// console-console.log((randomNumber1));
+
