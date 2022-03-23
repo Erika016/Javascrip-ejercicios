@@ -410,15 +410,15 @@
 
 // EJERCICIO 10
 
-let max =50;
-let min =1;
-let randomNumber1 = Math.floor (Math.random()*max)+min;
-let randomNumber2 = Math.floor (Math.random()*max)+min;
-if (randomNumber1 > randomNumber2){
-  console.log("Player 1 cins!");
-} else if (randomNumber1 < randomNumber2){
-  console.log("player 2 wins!");
-} else {
-  console.log("Draw");
-}
-console-console.log((randomNumber1));
+// let max =50;
+// let min =1;
+// let randomNumber1 = Math.floor (Math.random()*max)+min;
+// let randomNumber2 = Math.floor (Math.random()*max)+min;
+// if (randomNumber1 > randomNumber2){
+//   console.log("Player 1 cins!");
+// } else if (randomNumber1 < randomNumber2){
+//   console.log("player 2 wins!");
+// } else {
+//   console.log("Draw");
+// }
+// console-console.log((randomNumber1));
