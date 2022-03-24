@@ -493,6 +493,7 @@
 //                 break
 // }
 
+<<<<<<< HEAD
 // // Ejercicio 2
 // switch(userChoice.toLowerCase()) {
 //     case "janueary":
@@ -500,3 +501,20 @@
 //         break
 // }
 
+=======
+// let max =50;
+// let max =12;
+// let min =1;
+// let randomNumber1 = Math.floor (Math.random()*max)+min;
+// let randomNumber2 = Math.floor (Math.random()*max)+min;
+// if (randomNumber1 > randomNumber2){
+//   console.log("Player 1 cins!");
+// } else if (randomNumber1 < randomNumber2){
+//   console.log("player 2 wins!");
+// } else {
+//   console.log("Draw");
+// }
+// console-console.log((randomNumber1));
+
+
+>>>>>>> 5b45e318a988a6e7205f822e3bb57901296afdb8
