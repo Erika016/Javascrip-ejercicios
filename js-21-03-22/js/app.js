@@ -446,11 +446,8 @@
 
 // EJERCICIO 10
 
-<<<<<<< HEAD
 // let max =50;
-=======
 // let max =12;
->>>>>>> 4172cb001165e8fa46803643141f67ab30f7bc3f
 // let min =1;
 // let randomNumber1 = Math.floor (Math.random()*max)+min;
 // let randomNumber2 = Math.floor (Math.random()*max)+min;
@@ -462,7 +459,5 @@
 //   console.log("Draw");
 // }
 // console-console.log((randomNumber1));
-<<<<<<< HEAD
-=======
 
->>>>>>> 4172cb001165e8fa46803643141f67ab30f7bc3f
+
