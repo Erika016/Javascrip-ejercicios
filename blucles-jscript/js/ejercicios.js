@@ -25,12 +25,12 @@
 
 // console.log(typeof text);
 
-// // Ejercicio 2
-let text = "no lemon, no melon";
-text.split ",";
-for(; ;){
+// // // Ejercicio 2
+// let text = "no lemon, no melon";
+// text.split ",";
+// for(; ;){
 
-}
+// }
 
 // console.log('text:', text);
 // let reverse = 'text'.reverse();
@@ -74,6 +74,34 @@ for(; ;){
 // // copia del ejercicio
 // let text = "palindrome";
 // for(let number =0; number<= text.length-1; number++){
-// console.log(`${number+1}. ${text[number]}`);
-// }
+// // console.log(`${number+1}. ${text[number]}`);
+// // }
 // console.log("Letter quantity:" , text.length);
+
+
+// // Explicacion break blucles
+// let num= 0;
+// for (let i=0; i < 10; i++){
+//     if (i%5 == 0) {
+//         break
+//     }
+//     num++
+// }
+// console.log(num);
+
+// ENCONTRAR NUMEROS PRIMO
+
+// let isPrime = true;
+// let num = 19;
+// let counter = 0;
+// for (let i = 2; i < num && isPrime == true; i++) {
+// console.log(`iteration ${++counter}`);
+// if (num % i == 0) {
+// console.log("It's not a prime, divisible by: ", i);
+// isPrime = false;
+// // break;
+// }
+// }
+// if (isPrime) {
+// console.log(`the number ${num} is prime`);
+// }
