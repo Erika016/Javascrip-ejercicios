@@ -408,7 +408,7 @@
 //   alert("Write a real data!");
 // }
 
-// Exewrcise 4
+// Exercise 4
 
 // let isGreen = true;
 // // trying the negate opetator
@@ -695,21 +695,21 @@
 //   }
 //   console.log("7-Day Averge Tenmperature:", mediaTemp / counter);
 
-// Exercise 5
-let toGues =Math.floor(Math.random() *11);
-console.log(toGues);
-let attemps = 3;
-let userWon = false;
-console.log("Let's play");
-let userNumber = prompt("Try to guess a number between 0 and 10");
-while (--attemps >= 0 && !userWon){
-  if (toGues == +userNumber){
-    alert("your win!");
-    userWon = true;
-  } else if (attemps > 0) {
-    userNumber= prompt(`Try it again, you have ${attemps} more attemps`);
-  }
-}
-if (!userWon) {
-  alert("Sorry, Good luck in love");
-}
+// // Exercise 5
+// let toGues =Math.floor(Math.random() *11);
+// console.log(toGues);
+// let attemps = 3;
+// let userWon = false;
+// console.log("Let's play");
+// let userNumber = prompt("Try to guess a number between 0 and 10");
+// while (--attemps >= 0 && !userWon){
+//   if (toGues == +userNumber){
+//     alert("your win!");
+//     userWon = true;
+//   } else if (attemps > 0) {
+//     userNumber= prompt(`Try it again, you have ${attemps} more attemps`);
+//   }
+// }
+// if (!userWon) {
+//   alert("Sorry, Good luck in love");
+// }
