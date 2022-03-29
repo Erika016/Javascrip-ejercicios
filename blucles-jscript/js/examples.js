@@ -253,31 +253,117 @@
 //     "Tony Stark created and built one of Spider-Man's upgraded suits known as the Orin Spider Suit. We got a small glimpse of it in Spider-Man: Homecoming!",
 // },
 // };
+// EJERCICIO DE CARRITO
+// let shoppingCart = {
+//   0: {
+//     product_id: 0,
+//     name: "Nike Air Max",
+//     price: "125$",
+//     quantity: 1,
+//   },
+//   1: {
+//     product_id: 6,
+//     name: "Nike Air Pegasus",
+//     price: "155$",
+//     quantity: 4,
+//   },
+//   2: {
+//     product_id: 4,
+//     name: "Nike Min Jordan",
+//     price: "185$",
+//     quantity: 1,
+//   },
+//   3: {
+//     product_id: 3,
+//     name: "Nike blazer 1.3 Blue",
+//     price: "49$",
+//     quantity: 2,
+//   },
+// };
+// SOLUCION
 
-let shoppingCart = {
-    adidas:{
-        product_id:0,
-        name: "Ultrabost",
-        price: "125$",
-        quantity: 1,
-    },
-    nike:{
-        product_id:6,
-        name: "Pegasus",
-        price: "115$",
-        quantity: 4,
-    },
-    puma: {
-        product_id:4,
-        name: "raiders",
-        price: "125$",
-        quantity: 1,
-    },
-    joma:{
-        product_id:3,
-        name: "basics",
-        price: "49$",
-        quantity: 2,
-    },
-};
-console.log(product_id);
+// for (let i = 0; i < Object.keys(shoppingCart).length; i++) {
+//     let id = shoppingCart[i].product_id;
+//     let name = shoppingCart[i].name;
+//     console.log("id: ", id, " name: ", name);
+//     }
+
+// let original =[1,2,3];
+// let originalIncreased =[0, ...original,4];
+// let copy = [...original];
+// console.log(copy);
+// copy[copy.length] =[1,2,3,4,5];
+// console.log(copy);
+// let elements = new Array();
+// console.log(elements);
+// let single = Array.of(10);
+// console.log(typeof elements);
+
+// let colors= ["red", "blue","green"];
+// alert(colors[4]);
+// colors[2]= "black";
+// colors[3]= "pink";
+// alert(colors.length);
+// colors[colors.length] = "black";
+// colors[colors.length] = "white";
+
+// let number =[1,2,3,];
+// number.push(5);
+// console.log(number);
+// number.pop();
+// console.log(number);
+// number.push(7,8);
+// console.log(number);
+// number.pop(2);
+// console.log(number);
+
+// colors[colors.length] = "white";
+// number.pop(); saca elemento por el final
+// number.push(5); añade por el final
+
+// let colors = ["red","green","blue"];
+// colors.shift(); saca elemento por el principio
+// colors.unshift("orange");añade por el principio
+
+// let numbers=[1,2,3,4,5];
+// numbers.reverse();
+// console.log(numbers);
+// let moreNumbers = [0,1,5,10,15];
+// moreNumbers.sort();
+// console.log(moreNumbers);
+// function compare(value1, value2) {
+//   if (value1 < value2) {
+//     return -1;
+//   } else if (value1 > value2) {
+//     return 1;
+//   } else {
+//     return 0;
+//   }
+// }
+// moreNumbers.sort(compare);
+// // alert(moreNumbers);
+// console.log(moreNumbers);
+
+// var numbers = [4, 2, 5, 1, 3, 7, 7, 9, -1];
+// let counter = 0;
+// // numbers.sort(function (a, b) {
+// //   counter++;
+// //   console.log("a:", a);
+// //   console.log("b:", b);
+// //   console.log(a - b);
+// //   return a - b;
+// // });
+// console.log(numbers);
+// console.log(counter);
+
+let numbers = [3, 9, 8, 1, 4];
+for (let index = 0; index < numbers.length - 2; index++) {
+  for (let j = 0, aux = 0; j < numbers.length - 1; j++) {
+    if (numbers[j] > numbers[j + 1]) {
+      aux = numbers[j];
+      numbers[j] = numbers[j + 1];
+      numbers[j + 1] = aux;
+    }
+  }
+}
+console.log(numbers);
