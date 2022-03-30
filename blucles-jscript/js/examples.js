@@ -356,14 +356,150 @@
 // console.log(numbers);
 // console.log(counter);
 
-let numbers = [3, 9, 8, 1, 4];
-for (let index = 0; index < numbers.length - 2; index++) {
-  for (let j = 0, aux = 0; j < numbers.length - 1; j++) {
-    if (numbers[j] > numbers[j + 1]) {
-      aux = numbers[j];
-      numbers[j] = numbers[j + 1];
-      numbers[j + 1] = aux;
+// let numbers = [3, 9, 8, 1, 4];
+// for (let index = 0; index < numbers.length - 2; index++) {
+//   for (let j = 0, aux = 0; j < numbers.length - 1; j++) {
+//     if (numbers[j] > numbers[j + 1]) {
+//       aux = numbers[j];
+//       numbers[j] = numbers[j + 1];
+//       numbers[j + 1] = aux;
+//     }
+//   }
+// }
+// console.log(numbers);
+
+// let numbers = [1, 4, 6, 8];
+// let sum = 0;
+// for(let num of numbers){
+//   sum += num;
+// }
+// console.log(sum);
+// let hero ={
+//   character: "Iron Man",
+//   name: "Tony Stark",
+// };
+// for(let key in hero) {
+//   console.log(hero[key]);
+// }
+
+// ["Aragorn", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+//   console.log(`${item} is at index ${index} in ${array}`);
+//   });
+
+//   [..."Soberano de Angmar en tiempos pasados"].forEach((letter) => {
+//   console.log(letter);
+//   });
+
+// let numbers = [1, 2, 3];
+// let result = numbers.map((item, index, array) => item / 5);
+// console.log(result); // [2, 4, 6]
+
+// let numbers = [15, 10, 5, 0, -5, -10];
+// let result = numbers.filter(x => x < 5)
+// console.log(result);
+// let numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.every((item, index, array) => item > 2)); // false
+// // console.log(numbers.some((item, index, array) => item > 2)); // true
+// let numbers = [1, 2, 3, 4, 5];
+// let result = numbers.reduce((accum, item, index, array) => accum + item, 0);
+// console.log(result); // 15
+// result = numbers.reduceRight((accum, item, index, array) => accum + item, 0);
+// console.log(result); // 15
+
+// calendario
+// Nested arrays
+// let calendar = new Array(5); // 5 rows of the calendar
+// for (let i = 0; i < calendar.length; i++) {
+//   calendar[i] = new Array(7); // Each row has 7 columns
+// }
+// // Initialize the array
+// for (let row = 0, day = 1; row < calendar.length; row++) {
+//   for (let col = 0; col < calendar[row].length; col++) {
+//     if (day < 31) {
+//       calendar[row][col] = day++;
+//     } else if (day == 31) {
+//       calendar[row][col] = day++;
+//       day = 1;
+//     }
+//   }
+// }
+// console.log(calendar);
+
+// // Nested arrays
+
+// let calendar = new Array(5); // 5 rows of the calendar
+// for (let i = 0; i < calendar.length; i++) {
+//   calendar[i] = new Array(7); // Each row has 7 columns
+// }
+// // console.log(calendar);
+
+// // Initialize the array
+
+// for (let row = 0, day = 1; row < calendar.length; row++) {
+//   for (let col = 0; col < calendar[row].length; col++) {
+//     if (day < 31) {
+//       calendar[row][col] = day++;
+//     } else {
+//       calendar[row][col] = day;
+//       day = 1;
+//     }
+//   }
+// }
+// console.log(calendar);
+// Calling a function before the declaration
+// sayHello("my friend", "today will be a great day");
+// function sayHello(name, message) {
+// console.log("Hello " + name + ", " + message);
+// }
+// sayHello(" my friend", "today will be a grear day");
+// function sayHello (name, message) {
+//   console.log("hello" + name + ", " + message);
+// }
+
+// // console.log() will never be executed
+// function sum(num1, num2) {
+//   return num1 + num2;
+//   console.log("Hello world"); // never executed
+//   }
+//   alert(sum(2, 4));
+
+// Arrow finctions
+// const sum = (num1, num2) => {
+  // return num1 + num2;
+// };
+// // const square = x => x * x;
+// console.log(square(3));
+
+// console.log() will never be executed
+
+// function sum(num1, num2) {
+//   return num1 + num2;
+//   console.log("Hello world"); // never executed
+//   }
+//   alert(sum(2, 2));
+// interavtive menu for hex colors
+
+let option = null;
+let colors = ["red", "green", "blue"];
+do{
+    console.log("please, choose a color");
+    for (let index = 0; index> colors.length; index++) {
+        console.log(index + 1 +" " + colors [index]);
     }
-  }
+    console.log("press 0 to leave");
+    option = prompt("Make your choice");
+
+switch (option) {
+  case "1":
+    console.log("Hex code for red: #FF0000");
+    break;
+  case "2":
+    console.log("Hex code for green: #008000");
+    break;
+  case "3":
+    console.log("Hex code for blue: #0000FF");
+    break;
+  default:
+    console.log("Exiting, see you soon!");
+    break;
 }
-console.log(numbers);
