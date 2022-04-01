@@ -31,44 +31,39 @@ const exercise1 = () => {
 //  exercise1();
 
 // Exercise2
-// generar un progama que muestre la hora y una alerta con buenos dias/tarde/noche
-
-// let year = actualDate.getFullYear();
-// let month = actualDate.getMonth()+1;
-// let day = actualDate.getDate();
-// let actualHours= {
-//     hour: actualDate.getHours(),
-//     min: actualDate.getMinutes(),
-//     seg: actualDate.getSeconds(),
-// }
-
-// if (actualHours){
-// console.log(06:00:00<= 11:59
-//     alert("¡Buenos días!");
-
-// }
+const exercise2 = () =>{
 let hours = new Date().getHours();
 if( hours >= 6 && hours <12){
-    alert("");
-        } else if {
-           ;
+    alert("¡Buenos días!");
+        } else if (hours >= 12 && hours < 21 ) {
+          alert("¡Buenas tardes!");
         } else {
-         ;
+          alert("¡Buenas noches!");
         }
-    
-// let actualHours= [hour = actualDate.getHours(),min = actualDate.getMinutes(),
-//     seg = actualDate.getSeconds(),
-// ]
-// console.log(actualHours);
-// let hora = actualHours.forEach((item, index,) => {
-//     console.log(`${index}`);
-// })
+        console.log(hours);
+      };
+// exercise2();
 
-// console.log(hora);
+// Exercise 3
+const exercise3 = () => {
+  const generateColor = () => {
+let letters = "0123456789ABCDEF";
+let color = '#';
+for(var i =0; i < 6; i++){
+  color += letters[(Math.floor(Math.random()*16))];
+  }
+// console.log(color);
+}
+return color;
+for(let i = 1; 1 <= 10; i++){
+  console.log("%cHello Worl",`color: ${generateColor()}`);
+};
+// exercise3();
 
-//     let hour = loginInfo.getHours();
-//     let min = loginInfo.getMinutes();
-//     let seg = loginInfo.getSeconds();
-
-//     let completeDate = `${year}/`;
-//     
+// Exercise 4
+// let dni = prompt("Please, enter your DNI");
+// let min = 0;
+// let max = 9;
+// let numAle = Math.floor(Math.random() * (max - min + 1));
+// ;
+// console.log(numAle)
