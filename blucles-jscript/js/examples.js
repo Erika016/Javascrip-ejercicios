@@ -479,27 +479,30 @@
 //   alert(sum(2, 2));
 // interavtive menu for hex colors
 
-let option = null;
-let colors = ["red", "green", "blue"];
-do{
-    console.log("please, choose a color");
-    for (let index = 0; index> colors.length; index++) {
-        console.log(index + 1 +" " + colors [index]);
-    }
-    console.log("press 0 to leave");
-    option = prompt("Make your choice");
+// let option = null;
+// let colors = ["red", "green", "blue"];
+// do{
+//     console.log("please, choose a color");
+//     for (let index = 0; index> colors.length; index++) {
+//         console.log(index + 1 +" " + colors [index]);
+//     }
+//     console.log("press 0 to leave");
+//     option = prompt("Make your choice");
 
-switch (option) {
-  case "1":
-    console.log("Hex code for red: #FF0000");
-    break;
-  case "2":
-    console.log("Hex code for green: #008000");
-    break;
-  case "3":
-    console.log("Hex code for blue: #0000FF");
-    break;
-  default:
-    console.log("Exiting, see you soon!");
-    break;
-}
+// switch (option) {
+//   case "1":
+//     console.log("Hex code for red: #FF0000");
+//     break;
+//   case "2":
+//     console.log("Hex code for green: #008000");
+//     break;
+//   case "3":
+//     console.log("Hex code for blue: #0000FF");
+//     break;
+//   default:
+//     console.log("Exiting, see you soon!");
+//     break;
+// }
+
+let single = Array.of(10);
+console.log(single);
