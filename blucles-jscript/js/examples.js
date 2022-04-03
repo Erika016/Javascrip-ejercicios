@@ -503,6 +503,3 @@
 //     console.log("Exiting, see you soon!");
 //     break;
 // }
-
-let single = Array.of(10);
-console.log(single);
