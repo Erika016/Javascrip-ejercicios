@@ -146,6 +146,7 @@ generateMatricula() += (numbers + letter);
 // exercise5();
 
 // Ejercicio 6
+const exercise6 = () => {
 // Generar 20 citas aleatorias y representarla por intervalos de 10" durenta 2'
 citas =() => {
 let citas = [
@@ -177,3 +178,16 @@ let citaAleatoria = citas.of[math.floor(math.random()*20)-min];
 console.log(citaAleatoria)
 }
 setTimeout(citas, 3000);
+};
+// exercise6();
+
+// Ejercicio 7
+
+// new Array(100)
+// {length: 100}
+// () => Math.floor(Math.random()*500)
+// let miarray= Array.from({length: 100}, () => [Math.floor(Math.random(500-0)*100)+min)];
+// miarray.forEach(function(item,index,arr){
+//   console.log(item);
+// });
+let number = "";
