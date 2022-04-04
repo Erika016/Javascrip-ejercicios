@@ -74,6 +74,26 @@ if( hours >= 6 && hours <12){
 
 // // Exercise 4
 // const exercise4 = () => {
+  let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S','Q', 'V', 'H', 'L', 'C', 'K'];
+  let dni= prompt("Please, enter your DNI: ");
+  let numbers = dni.substrings(0,dni.length-1);
+  let letter = dni.substrings(dni.length-1);
+if(validLetters[parseInt(numbers)%23] == letter){
+  alert("Valid DNI");
+} else {
+  alert ("The adara entered ir wrong");
+}
+
+const dniGenerator = () =>{
+  let randomNumber = Math.floor(Math.random()*(99999999-100000000)+10000000);
+;
+return randomNumber;
+}
+for(let index = 0; index < 10; index++){
+  console.log(dniGenerator());
+
+}
+
 // let numbers =parseInt(prompt("Please, enter your DNI"));
 // if(numbers > "99999999"){
 //   // si el numero introducido es mayor sale alerte de error
