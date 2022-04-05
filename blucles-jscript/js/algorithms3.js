@@ -74,25 +74,25 @@ if( hours >= 6 && hours <12){
 
 // // Exercise 4
 // const exercise4 = () => {
-  let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S','Q', 'V', 'H', 'L', 'C', 'K'];
-  let dni= prompt("Please, enter your DNI: ");
-  let numbers = dni.substrings(0,dni.length-1);
-  let letter = dni.substrings(dni.length-1);
-if(validLetters[parseInt(numbers)%23] == letter){
-  alert("Valid DNI");
-} else {
-  alert ("The adara entered ir wrong");
-}
+//   let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S','Q', 'V', 'H', 'L', 'C', 'K'];
+//   let dni= prompt("Please, enter your DNI: ");
+//   let numbers = dni.substrings(0,dni.length-1);
+//   let letter = dni.substrings(dni.length-1);
+// if(validLetters[parseInt(numbers)%23] == letter){
+//   alert("Valid DNI");
+// } else {
+//   alert ("The adara entered ir wrong");
+// }
 
-const dniGenerator = () =>{
-  let randomNumber = Math.floor(Math.random()*(99999999-100000000)+10000000);
-;
-return randomNumber;
-}
-for(let index = 0; index < 10; index++){
-  console.log(dniGenerator());
+// const dniGenerator = () =>{
+//   let randomNumber = Math.floor(Math.random()*(99999999-100000000)+10000000);
+// ;
+// return randomNumber;
+// }
+// for(let index = 0; index < 10; index++){
+//   console.log(dniGenerator());
 
-}
+// }
 
 // let numbers =parseInt(prompt("Please, enter your DNI"));
 // if(numbers > "99999999"){
@@ -143,32 +143,57 @@ for(let index = 0; index < 10; index++){
 // EJERCICIO 5
 
 // generar matricula aleatoria
-const exercise5 = () => {
-const generateMatricula = () => {
-let num = "0123456789";
-let letras = "BCDFGHJKLMNPRSTWXYZ";
-let numbers= "";
-let letter = "";
-let matriculas = parseFloat(prompt("¿Cuantas matriculas desea generar?"));
-for(let i =0; i < 4; i++) {
-  numbers += num[Math.floor(Math.random() *10)];
-};
-for(let x = 0; x < 3; x++) {
-letter += letras[Math.floor(Math.random()*21)];
-}
+// const exercise5 = () => {
+//   const letters = ["B","C","D","F","G","H","J","K","L","M","N","P","R","S","T","V","W","X","Y","Z"];
+//   let howMany = parseInt(prompt("How many number plates do you want?"));
+//   let arrOfPlates = [];
+//   function genPlates() {
+//     let plateNum = [];
+//     do {
+//       let index = Math.floor(Math.random() * 10);
+//       plateNum.push(index);
+//     } while (plateNum.length < 4);
+//     do {
+//       let index = letters[Math.floor(Math.random() * letters.length)];
+//       plateNum.push(index);
+//     } while (plateNum.length < 7);
+//     plateNum.splice(4, 0, " ");
+//     arrOfPlates.push(plateNum.join(""));
+//   }
 
-console.log(numbers + letter);
-};
-generateMatricula() += (numbers + letter);
-// for(let j = 0; x < matriculas; j++) {
-//   console.log(numbers + letter);
-};
+//   do {
+//     genPlates();
+//   } while (arrOfPlates.length < howMany);
+//   console.log(arrOfPlates);
+// };
+
+// exercise5();
+// const exercise5 = () => {
+// const generateMatricula = () => {
+// let num = "0123456789";
+// let letras = "BCDFGHJKLMNPRSTWXYZ";
+// let numbers= "";
+// let letter = "";
+// let matriculas = parseFloat(prompt("¿Cuantas matriculas desea generar?"));
+// for(let i =0; i < 4; i++) {
+//   numbers += num[Math.floor(Math.random() *10)];
+// };
+// for(let x = 0; x < 3; x++) {
+// letter += letras[Math.floor(Math.random()*21)];
+// }
+
+// console.log(numbers + letter);
+// };
+// generateMatricula() += (numbers + letter);
+// // for(let j = 0; x < matriculas; j++) {
+// //   console.log(numbers + letter);
+// };
 // exercise5();
 
 // Ejercicio 6
 const exercise6 = () => {
 // Generar 20 citas aleatorias y representarla por intervalos de 10" durenta 2'
-citas =() => {
+
 let citas = [
 "«Sin tele y sin cerveza, Homer pierde la cabeza».  Homero.",
  "«Cállate, cerebro. Ahora tengo amigos, ya no te necesito». Lisa.",
@@ -191,23 +216,30 @@ let citas = [
 "«Golpe de remo»  Bart.",
 "«Gracias, vuelvan prontos» Apu.",
 ]
-
-let citaAleatoria = citas.of[math.floor(math.random()*20)-min];
-
-
-console.log(citaAleatoria)
-}
-setTimeout(citas, 3000);
+let start = new Date();
+let end = null;
+setTimeout(() =>{
+  clearInterval(intervalId)
+  end =new Date();
+  console.log(
+    `Operation took ${end.getTime() - start.getTime()} miliseconds.`);
+},10000)
+let intervalId = setInterval(() =>{
+console.log(citas[Math.floor(Math.random()* citas.length)]);
+},1000);
 };
-// exercise6();
+
+//  exercise6();
 
 // Ejercicio 7
-
-// new Array(100)
-// {length: 100}
-// () => Math.floor(Math.random()*500)
-// let miarray= Array.from({length: 100}, () => [Math.floor(Math.random(500-0)*100)+min)];
-// miarray.forEach(function(item,index,arr){
-//   console.log(item);
-// });
-let number = "";
+// Crear una Array de 100 numeros aleatorios del 0 a 500 y ordenarlo de >
+const exercise7 = () =>{
+let numbers = new Array(100);
+for(let inicio =0;inicio < numbers.length;inicio++) {
+  numbers[inicio] = Math.floor(Math.random()*501);
+}
+numbers = numbers.filter((num)=> num % 2 ==  0);
+numbers.sort((a,b) => b-a);
+console.log(numbers);
+};
+//  exercise7();
