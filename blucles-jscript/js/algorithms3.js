@@ -147,33 +147,46 @@ generateMatricula() += (numbers + letter);
 
 // Ejercicio 6
 // Generar 20 citas aleatorias y representarla por intervalos de 10" durenta 2'
-citas =() => {
-let citas = [
-"«Sin tele y sin cerveza, Homer pierde la cabeza».  Homero.",
- "«Cállate, cerebro. Ahora tengo amigos, ya no te necesito». Lisa.",
-  "«Para todo lo que usaré esa cama es para dormir, comer, y tal vez construir un pequeño fuerte»  Homero.", 
-"«Solo porque no me importa no significa que no lo entienda» Homero.", 
-"«¿No podemos tener una reunión que no termine con desenterrar un cuerpo?»  El Alcalde.",
-"«Nada de lo que nos dices nos molesta, somos la generación MTV»  Bart.",
-"«¿Donuts? Te dije que no me gustaba la comida étnica»  Charles Montgomery Plantagenet Schicklgruber Burns.",
-"«Soy el hado mágico de la felicidad, vengo del país fantástico de la felicidad» Homero.",
-"«¡Todo marcha bien, Milhouse!» Milhouse",
-"«¡¿Alguien por favor quiere pensar en los niños?!» Elena Alegría",
-"«¡En esta casa obedecemos las leyes de la termodinámica!» Homero.",
-"«Si estás en el cielo, ¡sálvame por favor Superman!»  Homero.",
-"«Operadora, deme el número para el 911».  Homero.",
-"«Me voy al asiento trasero de mi coche, con la mujer que amo, ¡Y no volveré en 10 minutos!». Homero.",
-"«¡Multiplícate por cero!» Bart.",
-"«Smithers, suelta a los perros» Burns.",
-"«¡No conquistas nada con una ensalada… No conquistas nada con una ensalada!» Homero, Bart y Lisa.",
-"«Mátalos a todos y que Dios los seleccione» Marge.",
-"«Golpe de remo»  Bart.",
-"«Gracias, vuelvan prontos» Apu.",
-]
+// citas =() => {
+// let citas = [
+// "«Sin tele y sin cerveza, Homer pierde la cabeza».  Homero.",
+//  "«Cállate, cerebro. Ahora tengo amigos, ya no te necesito». Lisa.",
+//   "«Para todo lo que usaré esa cama es para dormir, comer, y tal vez construir un pequeño fuerte»  Homero.", 
+// "«Solo porque no me importa no significa que no lo entienda» Homero.", 
+// "«¿No podemos tener una reunión que no termine con desenterrar un cuerpo?»  El Alcalde.",
+// "«Nada de lo que nos dices nos molesta, somos la generación MTV»  Bart.",
+// "«¿Donuts? Te dije que no me gustaba la comida étnica»  Charles Montgomery Plantagenet Schicklgruber Burns.",
+// "«Soy el hado mágico de la felicidad, vengo del país fantástico de la felicidad» Homero.",
+// "«¡Todo marcha bien, Milhouse!» Milhouse",
+// "«¡¿Alguien por favor quiere pensar en los niños?!» Elena Alegría",
+// "«¡En esta casa obedecemos las leyes de la termodinámica!» Homero.",
+// "«Si estás en el cielo, ¡sálvame por favor Superman!»  Homero.",
+// "«Operadora, deme el número para el 911».  Homero.",
+// "«Me voy al asiento trasero de mi coche, con la mujer que amo, ¡Y no volveré en 10 minutos!». Homero.",
+// "«¡Multiplícate por cero!» Bart.",
+// "«Smithers, suelta a los perros» Burns.",
+// "«¡No conquistas nada con una ensalada… No conquistas nada con una ensalada!» Homero, Bart y Lisa.",
+// "«Mátalos a todos y que Dios los seleccione» Marge.",
+// "«Golpe de remo»  Bart.",
+// "«Gracias, vuelvan prontos» Apu.",
+// ]
 
-let citaAleatoria = citas.of[math.floor(math.random()*20)-min];
+// let citaAleatoria = citas.of[math.floor(math.random()*20)-min];
 
 
-console.log(citaAleatoria)
-}
-setTimeout(citas, 3000);
+// console.log(citaAleatoria)
+// }
+// setTimeout(citas, 3000);
+
+// EJERCISIO 7
+// generar un programa de 100 nº aleatorios de 0 al 500 y filtrar los impares y ordenarlos de mayor a menos.
+
+// let alearotio= "";
+// let min= 0;
+// let max = 500;
+// let number= [Math.floor(Math.random(max - min -1)*500)+min];
+
+// for(let i =0; i < 100; i++){
+// aleatorio += number[Math.floor(Math.random(max - min -1)*500)+min];
+// }
+// console.log(aleatorio);
