@@ -1,2 +1,0 @@
-# Javascrip-ejercicios
-training-javascript
