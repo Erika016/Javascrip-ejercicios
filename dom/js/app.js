@@ -48,14 +48,26 @@ let box3 = box2.nextElementSibling;
 
 
 
-let header = document.createElement("h1")
-header.append("Hello,Word!")
-header.prepend("¡");
-document.body.append(header);
-document.querySelector("h1").firstChild.before("¡¡");
-let paragraph = document.createElement("p");
-paragraph.textContent = "Writting a paragraph";
-// document.body.append(paragraph);
-document.querySelector("h1").after(paragraph);
-document.querySelector("h1").replaceWith(paragraph);
+// let header = document.createElement("h1")
+// header.append("Hello,Word!")
+// header.prepend("¡");
+// document.body.append(header);
+// document.querySelector("h1").firstChild.before("¡¡");
+// let paragraph = document.createElement("p");
+// paragraph.textContent = "Writting a paragraph";
+// // document.body.append(paragraph);
+// document.querySelector("h1").after(paragraph);
+// document.querySelector("h1").replaceWith(paragraph);
 // paragraph.remove();PARA ELIMINAR EL PARRAFO
+
+// stylo en linea
+let paragraph = document.querySelector("p");
+paragraph.style.textAlign = "center";
+paragraph.style.textTransform= "capitalize";
+paragraph.style.backgroundColor = "black";
+paragraph.style.color= "white";
+paragraph.style.padding= "8em 2em 2.5em .7em";
+paragraph.style.padding = "1em";
+paragraph.setAttribute("class", "margin");
+console.log(paragraph.getAttribute("class"));
+console.log(paragraph.style.cssText);
